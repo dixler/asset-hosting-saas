@@ -87,6 +87,7 @@ def createAsset(token, assetId, googleDocsURL, label, extension):
        s3Path = 'https://s3.amazonaws.com/%s/%s/%s' % format_tuple
 
        asset = {
+             "assetId": assetId,
              "userId": user['userId'],
              "dateModified": utils.getTimestamp(),
              "googleDocsURL": googleDocsURL,
