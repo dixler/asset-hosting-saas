@@ -32,3 +32,5 @@ This has currently been hardcoded for use with Google's OAuth 2.0. To configure 
 * Write Analytics APIs
 ## Security
 * Need to make createAsset() transactional to avoid race conditions.
+  * Could use GCP BigQuery, but hybrid cloud terraform provisioning seems like a pain due to creds and could be a learning experience.
+  * Would add extra complexity for a mere transactional
